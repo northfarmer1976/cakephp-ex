@@ -63,7 +63,7 @@ $conn->query("CREATE TABLE personal_info (
 $conn->query("CREATE TABLE transactions (
     id INT AUTO_INCREMENT PRIMARY KEY,
     account_number VARCHAR(20) NOT NULL,
-    transaction_type ENUM('Deposit', 'Withdrawal', 'Transfer') NOT NULL,
+    transaction_type VARCHAR(50) NOT NULL,
     amount DECIMAL(15, 2) NOT NULL,
     tx_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
     FOREIGN KEY (account_number) REFERENCES client_account(account_number) ON DELETE CASCADE

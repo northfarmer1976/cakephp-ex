@@ -4,7 +4,7 @@
  * Note: When deploying on OpenShift, change '127.0.0.1' to your MariaDB Service Name 
  * if the PHP app and Database are in different Pods.
  */
-$host = '127.0.0.1';
+$host = 'mariadb';
 $user = 'root';
 $pass = 'P@ssw0rd';
 $db   = 'sampledb';

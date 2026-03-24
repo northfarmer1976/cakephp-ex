@@ -16,6 +16,9 @@ if ($conn->connect_error) {
     die("<div class='error'>Connection Failed: " . $conn->connect_error . "</div>");
 }
 
+$conn->query("CREATE DATABASE IF NOT EXISTS $db CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci");
+$conn->select_db($db);
+
 // 6. Query Joined Data
 $sql = "SELECT a.account_number, p.full_name, a.balance, b.branch_name, 
                (SELECT COUNT(*) FROM transactions t WHERE t.account_number = a.account_number) as tx_count

@@ -49,13 +49,9 @@ $result = $conn->query($sql);
 <body>
 
 <div class="container">
-    <h2>Bank Management System</h2>
+    <h2>Bank Client Management System</h2>
     <p class="subtitle">Environment: <strong>CRC 4.16</strong> | Host: <strong>mariadb</strong></p>
     
-    <div style="margin-bottom: 20px;">
-        <span class="badge-reset">NOTICE: Tables were dropped and recreated upon this request.</span>
-    </div>
-
     <table>
         <thead>
             <tr>

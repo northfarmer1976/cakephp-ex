@@ -152,7 +152,7 @@ $emailDomains = [
     'mail.com', 'live.com', 'me.com', 'msn.com'
 ];
 
-$totalAccounts = 20000;
+$totalAccounts = 10000;
 
 for ($i = 0; $i < $totalAccounts; $i++) {
     $accNo = "ACC-" . (100000 + $i);

@@ -62,7 +62,6 @@ $transactions = $conn->query("
 <body>
 
 <div class="card">
-    <a class="back" href="javascript:history.back()">← Back</a>
     <h2>Transaction History</h2>
 
     <div class="account-card">

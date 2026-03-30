@@ -55,7 +55,19 @@ $result = $conn->query($sql);
 <div class="container">
     <h2>Bank Client Management System</h2>
     <p class="subtitle">Environment: <strong>CRC 4.16</strong> | Host: <strong>mariadb</strong></p>
-    
+    <div style="margin:20px 0; display:flex; gap:10px;">
+    <input 
+        type="text" 
+        id="searchAccount" 
+        placeholder="Enter Account ID (e.g. ACC-100000)" 
+        style="flex:1; padding:8px 12px; border:1px solid #ccc; border-radius:6px; font-size:14px;"
+    >
+    <button 
+        onclick="window.open('transactions.php?acc='+document.getElementById('searchAccount').value, '_blank')"
+        style="padding:8px 16px; background:#007bff; color:white; border:none; border-radius:6px; cursor:pointer;">
+        Search Transactions
+    </button>
+</div>
     <table>
         <thead>
             <tr>

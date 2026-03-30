@@ -165,7 +165,7 @@ for ($i = 0; $i < $totalAccounts; $i++) {
     
     // Insert Personal Info
 	$randomDomain = $emailDomains[array_rand($emailDomains)];
-    $email = strtolower(str_replace(' ', '.', $name)) . $randomDomain;
+    $email = strtolower(str_replace(' ', '.', $name)) . "@" . $randomDomain;
     $phone = "+1-555-010" . $i;
     $conn->query("INSERT INTO personal_info (account_number, full_name, email, phone) VALUES ('$accNo', '$name', '$email', '$phone')");
     

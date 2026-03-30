@@ -53,7 +53,7 @@ $result = $conn->query($sql);
 <body>
 
 <div class="container">
-    <h2>Bank Client Management System</h2>
+    <h2>Bank Core System</h2>
     <p class="subtitle">Environment: <strong>CRC 4.16</strong> | Host: <strong>mariadb</strong></p>
     <div style="margin:20px 0; display:flex; gap:10px;">
     <input 

@@ -74,7 +74,7 @@ $result = $conn->query($sql);
                         <td><?php echo htmlspecialchars($row['full_name']); ?></td>
                         <td><?php echo $row['branch_name']; ?></td>
                         <td class="money">$<?php echo number_format($row['balance'], 2); ?></td>
-                        <td><span class="tx-pill"><?php echo $row['tx_count']; ?> Total</span></td>
+                        <td><a class="tx-pill" href="transactions.php?acc=<?php echo $row['account_number']; ?>" target="_blank"><?php echo $row['tx_count']; ?> Total</a></td>
                     </tr>
                 <?php endwhile; ?>
             <?php endif; ?>

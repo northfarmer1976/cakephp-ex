@@ -26,7 +26,7 @@ $sql = "SELECT a.account_number, p.full_name, a.balance, b.branch_name,
         JOIN personal_info p ON a.account_number = p.account_number
         JOIN bank_branches b ON a.branch_id = b.id
         ORDER BY a.id DESC 
-		LIMIT 100";
+		LIMIT 20";
 $result = $conn->query($sql);
 ?>
 
